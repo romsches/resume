@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<head>
+	<title>RS</title>
+	<link href="style.css" rel="stylesheet">
+	<style type="text/css">
+		.content {
+			position: relative;
+			z-index: 999;
+		}
+
+		#app {
+			position: relative;
+		}
+
+		html,
+		body {
+			color: #060606;
+			font-size: 20px;
+			font-family: arial;
+		}
+
+		a {
+			font-family: Candara;
+			color: black;
+			margin-right: 30px;
+			text-decoration: none;
+			< !--при наведении мыши НЕ подчеркивается ссылка./mouseover unterstreicht den Link NICHT.-->
+		}
+
+		a:hover {
+			text-decoration: underline;
+			< !--при наведении мыши подчеркивается ссылка./Der Link wird beim Bewegen der Maus unterstrichen.-->
+		}
+
+		header {
+			height: 100px;
+		}
+
+		.fixed-container {
+			max-width: 1200px;
+			margin: 0 auto 0 auto;
+			< !--по часовой стрелке: верх право низ лево !/im Uhrzeigersinn: rechts oben links unten !--> height:100%;
+		}
+
+		header>div {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		h1 {
+			font-size: 60px;
+			margin: 0 0 20px 0;
+			font-family: "Franklin Gothic Medium";
+		}
+
+		.first-block>div {
+			height: 500px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center right;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			background-image: url('D:\\WEBSITE/ich 1.png');
+		}
+
+		.subtitle {
+			margin: 0 0 35px 0;
+			font-family: Candara
+		}
+
+		.layout-container {
+			position: fixed;
+			background-color: #0000009e;
+			width: 100%;
+			height: 100%;
+			display: none;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.layout h2 {
+			margin: 0 0 30px;
+			font-size: 30px;
+		}
+
+		.services {
+			height: 320px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.services>div {
+			width: 210px;
+			height: 210px;
+			font-size: 16px;
+			color: black;
+			font-family: cursive;
+		}
+
+		.services img {
+			margin-bottom: 20px;
+			width: 175px;
+			height: 175px;
+		}
+
+		h2 {
+			font-family: Candara;
+			font-size: 40px;
+		}
+
+		.styled {
+			font-family: Candara;
+			border: 0;
+			line-height: 2.5;
+			padding: 0 20px;
+			font-size: 1rem;
+			text-align: center;
+			color: #fff;
+			text-shadow: 1px 1px 1px #000;
+			border-radius: 10px;
+			background-color: purple;
+			background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+			box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+		}
+
+		.styled:hover {
+			background-color: blue;
+		}
+
+		.styled:active {
+			box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="content">
+		<div class="layout-container">
+
+		</div>
+
+		<header>
+
+			<div class="fixed-container">
+
+				<nav>
+					<a href="file:///D:/WEBSITE/meine%20seite/Новая%20папка/meinLebenslauf.html">Mein Lebenslauf</a>
+					<a href="file:///D:/WEBSITE/meine%20seite/Новая%20папка/vorstellung.html">Meine Vorstellung</a>
+				</nav>
+				<div>
+
+					&nbsp;&nbsp;&nbsp;
+					<!--неразрывный пробел/geschütztes Leerzeichen-->
+					<form action="file:///D:/WEBSITE/meine%20seite/Новая%20папка/kontakt.html">
+						<button class="favorite styled" type="submit">Mit mir kontaktieren &#128222</button>
+					</form>
+				</div>
+			</div>
+		</header>
+
+		<section class="first-block">
+			<div class="fixed-container">
+				<h1>Roman Schesler</h1>
+				<p class="subtitle"> Anfänger als Front-end Entwickler</p>
+				<form action="file:///D:/WEBSITE/meine%20seite/viktorina%20richtig/quiz.html">
+					<button class="favorite styled" type="submit">Klick mal hier, um mehr über mich zu erfahren
+						&#129488;</button>
+				</form>
+				<form action="file:///D:/WEBSITE/meine%20seite/Новая%20папка/minispiel.html">
+					<button class="favorite styled" type="submit">Mini-Spiel von mir &#127918</button>
+				</form>
+			</div>
+		</section>
+		<section>
+			<div class="fixed-container">
+				<h2>Das mache ich</h2>
+				<div class="services">
+					<div>
+						<img src="D:\WEBSITE/brush2.png">
+						Ideen in die Realität umsetzen.
+					</div>
+					<div>
+						<img src="D:\WEBSITE/i3square.png">
+						Responsives Layout für alle Browser und Geräte.
+					</div>
+					<div>
+						<img src="D:\WEBSITE/decred.png">
+						Frontend-Entwicklung und -Programmierung.
+					</div>
+					<div>
+						<img src="D:\WEBSITE/magicpen.png">
+						Korrektur und Verfeinerung des bestehenden Layouts.
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</div>
+	<div id="app">
+		<canvas width="2885" height="1291" style="width: 200px;/* height: 1291px; */"></canvas>
+	</div>
+	<script src="js/app.min.js"></script>
+	<script src="js/vendor.min.js"></script>
+
+</body>
+
+</html>

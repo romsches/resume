@@ -1,0 +1,128 @@
+<!--Schesler Roman HIT-21b-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Schesler Roman</title>
+  <style>
+
+}
+html,body{
+	color:#060606;
+	font-size:20px;
+	font-family:arial;
+	}
+a{
+	color:black;
+	margin-right:30px;
+	text-decoration:none;	<!--при наведении мыши НЕ подчеркивается ссылка./mouseover unterstreicht den Link NICHT.-->
+	}
+a:hover{
+	text-decoration:underline;  <!--при наведении мыши подчеркивается ссылка./Der Link wird beim Bewegen der Maus unterstrichen.-->
+	}
+header{
+	height: 100px;
+	}
+.fixed-container{
+	max-width: 1200px;
+	margin: 0 auto 0 auto;  <!--по часовой стрелке: верх право низ лево!/im Uhrzeigersinn: rechts oben links unten!-->
+	height:100%;
+	}
+	
+header > div{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	}
+	
+h1{
+	font-size:60px;
+	margin:0 0 20px 0;
+	}
+.first-block > div{
+	height:500px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center right;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	justify-content:center;
+	background-image: url('D:\\WEBSITE/ich 1.png');
+	}
+.subtitle{
+	margin:0 0 35px 0;
+	}
+.layout-container{
+	position: fixed;			
+	background-color:#0000009e;
+	width:100%;
+	height:100%;
+	display:none;
+	align-items:center;
+	justify-content:center;
+	}
+.layout{
+	background-color:white;
+	border-radius:10px;
+	width: 400px;
+	padding:30px;
+	}
+.layout input{
+	font-size:24px;
+	width:100%;
+	margin-bottom:25px;
+	}
+.layout h2{
+	margin: 0 0 30px;
+	font-size:30px;
+	}
+.services{
+	height:320px;
+	display:flex;
+	justify-content:space-between;
+	}
+.services > div{
+	width:210px;
+	height:210px;
+	font-size:16px;
+	color:black;
+	font-family:cursive;
+	}
+.services img{
+	margin-bottom:20px;
+	width:175px;
+	height:175px;
+	}
+h2{
+	font-size:40px;
+	}
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: purple;
+    background-image: linear-gradient(to top left,rgba(0, 0, 0, .2),rgba(0, 0, 0, .2) 30%,rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: blue;
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+	
+  </style>
+  <h1>Info</h1>
+  
+  <p class="subtitle">Information</p>
+  
+</body>
+</html>
